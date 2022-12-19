@@ -10,7 +10,7 @@ Overall, the project took about 1 day to complete.
 
 ## Installation and Setup
 
-1. Install Php and Composer
+1. Install Php ver. 8.1 and Composer ver. 2.4.4
   
 2. Configure php.ini file in the php installation dir to the following:  
 decomment the following lines by deleting the ";" at the start of each  
