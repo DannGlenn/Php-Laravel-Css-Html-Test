@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F3F3F4;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #2F4050;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: #A7B1C2;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.sidebar a:hover:not(.active) {
+    color: #FFFFFF;
+    background-color: #1CC09F;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content a {
+    display: none;
+    /* position: absolute; */
+    color: #A7B1C2;
+    background-color: #293846;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+    text-decoration: none;
+    border-left: 5px solid #1CC09F;
+    font-size: 13px;
+}
+
+.dropdown-content :hover {
+    color: #FFFFFF;
+    background-color: #1CC09F;
+    border-left: 5px solid #ffffff;
+}
+
+.dropdown:hover .dropdown-content a {
+    display: block;
+}
+
+.card {
+    color: #87756E;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.card-body {
+    padding: 1px;
+    font-size: 25px;
+}
+
+.card-title{
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.card-body p {
+    font-size: 10px;
+    line-height: 2px;
+}
+
+.message-card {
+    color: #6d615c;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 13px;
+}
+
+.chore {
+    color: #6d615c;
+    background-color: #F3F3F4;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.message {
+    padding: 10px;
+}
+
+.message-title {
+    color: #424141;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.message-body {
+    font-size: 12px;
+}
+
+.sticker {
+    background-color: #1CC09F;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20px;
+    font-size: 10px;
+    float: right;
+    color: white;
+}
+
+.sticker-red{
+    background-color: #ED5565;
+}
+.sticker-blue{
+    background-color: #1C84C6;
+}
+.sticker-orange{
+    background-color: #F8AC59;
+}
+.sticker-cyan{
+    background-color: #23c6c8;
+}
+
+.float-lft{
+    float: left;
+}
+
+.bar {
+    background-color: rgb(208, 208, 208);
+    border-radius: 5px;
+    height: 5px;
+    position: relative;
+}
+
+.bar .overlay {
+    height: 100%;
+    width: 20%;
+    /* determine how full the bar is */
+    left: 0;
+    position: absolute;
+    background-color: rgb(15, 168, 59);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#bar1{
+    width: 20%;
+}
+#bar2{
+    width: 73%;
+}
+#bar3{
+    width: 52%;
+}
+
+.icons {
+    width: 25px;
+    padding-right: 10px;
+
+}
+
+.menu-alert {
+    display: inline;
+    float: right;
+}
+
+table {
+    /* border-collapse: collapse; */
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #494949;
+}
+
+input[type="checkbox"],
+label {
+    float: left;
+    line-height: 1.6em;
+    height: 1.6em;
+    margin: 0px 2px;
+    padding: 0px;
+    font-size: inherit;
+}
+
+#messages{
+    min-height: 670px;
+}
+
+#project-list{
+    min-height: 300px;
+}
+
+#todos{
+    min-height: 300px;
+}
+
+#new-messages-container{
+    height: 100px; 
+    background-color: #F3F6FB;
+}
+
+#new-messages{
+    padding: 40px; 
+    font-weight: 1px; 
+    font-size: 18px; 
+    color: rgb(109, 107, 107);
+}
+
+.mask {
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  }
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+@media (min-width: 0px) {
+    .sticker {
+      float: right;
+    }
+  }
+
+@media (min-width: 600px) {
+    .sticker {
+      float: none;
+    }
+  }
+  
+  @media (min-width: 1068px) {
+    .sticker {
+      float: right;
+    }
+  }
+  
